@@ -1,0 +1,12 @@
+
+<h1>You have entered</h1>
+{{ acttext }}
+
+<h1> The count of words with frequency:</h1>
+
+{% for a, b in sortedwords %}
+    {{ a }} - {{ b }} <br>
+{% endfor%}
+
+
+<a href="{% url 'home'%}">Re-Count!!</a>
